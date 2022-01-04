@@ -24,4 +24,4 @@ newQuoteBtn.addEventListener('click',()=>{
     newQuote();
 })
 
-window.addEventListener('load',newQuote);
+newQuote();
