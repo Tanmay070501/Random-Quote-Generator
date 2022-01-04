@@ -43,8 +43,8 @@ body{
     margin-top: 80px;
 }
 .quote{
-    height: 24px;
-    width: 24px;
+    height: 48px;
+    width: 48px;
     /*align-self: flex-start;*/
 }
 .btn-container{
