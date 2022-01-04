@@ -4,8 +4,9 @@ const quoteContainer = document.querySelector('.quote-container');
 const loader = document.querySelector('.align-loader');
 /*----- Buttons -----*/
 const newQuoteBtn = document.querySelector('.new-btn');
+const tweetBtn = document.querySelector('.tweet-btn');
 
-
+//Loader
 function showLoader(){
     
     if(loader.classList.contains('hidden')){
@@ -50,6 +51,12 @@ async function newQuote(){
 
 newQuoteBtn.addEventListener('click',()=>{
     newQuote();
+})
+
+tweetBtn.addEventListener('click',()=>{
+    const query = quote.textContent + ' ' + author.textContent;
+    const tweetURL = `https://twitter.com/intent/tweet?text=${query}`;
+    window.open(tweetURL,'_blank');//open tweetURL in new tab
 })
 
 newQuote();
