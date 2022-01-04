@@ -8,8 +8,6 @@ const newQuoteBtn = document.querySelector('.new-btn');
 
 function showLoader(){
     
-    console.log(loader.classList)
-    console.log(quoteContainer.classList)
     if(loader.classList.contains('hidden')){
         loader.classList.remove('hidden')
     }
@@ -21,8 +19,6 @@ function showLoader(){
 }
 
 function hideLoader(){
-    console.log(loader.classList)
-    console.log(quoteContainer.classList)
     if(loader.classList.contains('show')){
         loader.classList.remove('show');
     }
