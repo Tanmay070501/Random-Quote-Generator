@@ -23,3 +23,5 @@ async function newQuote(){
 newQuoteBtn.addEventListener('click',()=>{
     newQuote();
 })
+
+window.addEventListener('load',newQuote);
